@@ -1,0 +1,48 @@
+# Python build & caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+htmlcov/
+.coverage
+.coverage.*
+
+# Virtual envs
+.venv/
+venv/
+
+# Lock files (large, generated)
+uv.lock
+
+# Editor / IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Secrets (also enforced via permissions.deny)
+.env
+.env.*
+!.env.example
+
+# Local Claude state
+.claude/settings.local.json
+.claude/sessions/
+.claude/tasks/
+.handoffs/
+
+# Backup
+*~
+.#*
+\#*

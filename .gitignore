@@ -51,8 +51,9 @@ Thumbs.db
 benchmark/
 vendor/
 
-# Claude Code artifacts
-.claude/
+# Claude Code artifacts (per-user state; shared settings.json is tracked)
+.claude/*
+!.claude/settings.json
 
 # Development notes
 thoughts/
@@ -60,3 +61,6 @@ thoughts/
 # TLDR cache (per-project)
 .tldr/
 archive/
+.gitnexus
+
+.handoffs/
